@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quản lý công việc</string>
+    <string name="txtTen">Tên đầy đủ (*)</string>
+    <string name="lbThongTinNguoiDung">Thông tin người dùng:</string>
+    <string name="txtEmail">Email (*)</string>
+    <string name="txtCMND">Số CMND/CCCD (*)</string>
+    <string name="txtSDTCoDinh">Điện thoại cố định</string>
+    <string name="txtSDT">Số điện thoại (*)</string>
+    <string name="txtDiaChi">Địa chỉ (*)</string>
+    <string name="txtLuu">Lưu thông tin</string>
+
+</resources>
