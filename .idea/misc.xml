@@ -9,7 +9,8 @@
         <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/activity_add_job.xml" value="0.2" />
         <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/activity_dang_nhap.xml" value="0.2" />
         <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/activity_info.xml" value="0.1" />
-        <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/fragment_addjob.xml" value="0.25" />
         <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/fragment_lich.xml" value="0.25" />
       </map>
     </option>
