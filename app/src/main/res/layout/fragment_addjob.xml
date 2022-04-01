@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -15,7 +16,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="180dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
@@ -24,7 +25,7 @@
                     android:layout_height="29dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:text="Ngày làm việc"
+                    android:text="Ngày kết thúc"
                     android:textColor="@color/black"></TextView>
 
                 <EditText
@@ -45,12 +46,12 @@
                     android:layout_height="29dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:text="Giờ"
+                    android:text="Hạn "
                     android:textColor="@color/black"></TextView>
 
                 <Button
                     android:id="@+id/btn_Gio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="76dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/vien"
@@ -62,39 +63,39 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nội dung công việc"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:textSize="17dp"
-            android:textColor="@color/black"></TextView>
+            android:text="Nội dung công việc"
+            android:textColor="@color/black"
+            android:textSize="17dp"></TextView>
 
         <EditText
             android:id="@+id/et_NoiDung"
-            android:layout_width="match_parent"
+            android:layout_width="233dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:inputType="textMultiLine"
-            android:hint="nhập vào đây"></EditText>
+            android:hint="nhập vào đây"
+            android:inputType="textMultiLine"></EditText>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Ghi chú"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
+            android:text="Ghi chú"
+            android:textColor="@color/black"
             android:textSize="17dp"></TextView>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="242dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="20dp">
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/et_SecondJob"
-                android:layout_width="200dp"
+                android:layout_width="148dp"
                 android:layout_height="wrap_content"
                 android:hint="Công việc phụ"
                 android:inputType="textMultiLine"></EditText>
@@ -103,16 +104,16 @@
                 android:id="@+id/btn_AddList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add"
-                android:textSize="14dp"
                 android:backgroundTint="@color/teal_200"
+                android:onClick="AddSecondJob"
+                android:text="Add"
                 android:textColor="@color/white"
-                android:onClick="AddSecondJob"></Button>
+                android:textSize="14dp"></Button>
         </LinearLayout>
 
         <ListView
             android:id="@+id/List_GhiChu"
-            android:layout_width="277dp"
+            android:layout_width="234dp"
             android:layout_height="264dp"
             android:layout_marginLeft="20dp"></ListView>
 
@@ -120,12 +121,11 @@
             android:id="@+id/Luu_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lưu"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/teal_200"
             android:layout_gravity="right"
-            android:layout_marginRight="10dp"
-            ></Button>
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Lưu"
+            android:textColor="@color/white"></Button>
     </LinearLayout>
 
 </LinearLayout>
