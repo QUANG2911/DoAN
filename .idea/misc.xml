@@ -16,8 +16,12 @@
         <entry key="..\:/Android/GiaoDien/app/src/main/res/layout/fragment_thongke.xml" value="0.25" />
         <entry key="..\:/Android/giaoTest/app/src/main/res/layout/activity_add.xml" value="0.17604166666666668" />
         <entry key="..\:/Android/giaoTest/app/src/main/res/layout/activity_add2.xml" value="0.17604166666666668" />
+        <entry key="..\:/Android/giaoTest/app/src/main/res/layout/activity_dang_nhap.xml" value="0.1" />
+        <entry key="..\:/Android/giaoTest/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
         <entry key="..\:/Android/giaoTest/app/src/main/res/layout/fragment_addjob.xml" value="0.17604166666666668" />
         <entry key="..\:/Android/giaoTest/app/src/main/res/layout/fragment_congviec.xml" value="0.16983695652173914" />
+        <entry key="..\:/Android/giaoTest/app/src/main/res/layout/fragment_lich.xml" value="0.13134057971014493" />
+        <entry key="..\:/Android/giaoTest/app/src/main/res/layout/fragment_thongke.xml" value="0.17708333333333334" />
       </map>
     </option>
   </component>

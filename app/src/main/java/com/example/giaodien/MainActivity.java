@@ -27,7 +27,6 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         innerFragment();
-//
     }
 
 
@@ -50,7 +49,7 @@ public class MainActivity extends FragmentActivity {
 
     }
     public void oneClick(View view) {
-
+        Intent intent;
         switch (view.getId())
         {
             case R.id.btn_Lich:
@@ -63,10 +62,13 @@ public class MainActivity extends FragmentActivity {
                 addFragment(new fragmentThongKe());
                 break;
             case R.id.btn_person:
-                Intent intent =new Intent(MainActivity.this, InfoActivity.class);
+                intent = new Intent(MainActivity.this, InfoActivity.class);
                 startActivity(intent);
                 break;
-
+            case R.id.addImg:
+                intent = new Intent(MainActivity.this, Add_Activity.class);
+                startActivity(intent);
+                break;
         }
     }
 

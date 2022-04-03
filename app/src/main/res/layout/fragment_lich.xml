@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="644dp"
+        android:layout_height="461dp"
         android:orientation="vertical">
 
         <DatePicker
@@ -17,15 +17,6 @@
             android:layout_height="408dp"
             android:layout_marginTop="40dp"></DatePicker>
 
-        <ImageButton
-            android:onClick="AddJobClick"
-            android:id="@+id/add"
-            android:layout_width="54dp"
-            android:layout_height="57dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/add"
-            android:scaleType="fitCenter"></ImageButton>
     </LinearLayout>
 
 
