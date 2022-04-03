@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NHANVIEN_ReaderSqlite extends SQLiteOpenHelper {
 
-    public static final  String DATABASE_NAME ="QUANLY_TG";
+    public static final  String DATABASE_NAME ="QUANLY_TG.db";
     public static final  String TABLE_NAME ="NHANVIEN";
     public static final  String COLUMN_MANV ="MANV";
     public static final  String COLUMN_TEN ="HOTEN";

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class CONGVIEC_ReaderSqlite extends SQLiteOpenHelper {
 
-    public static final  String DATABASE_NAME ="QUANLY_TG";
+    public static final  String DATABASE_NAME ="QUANLY_TG.db";
     public static final  String TABLE_NAME ="CONGVIEC";
     public static final  String COLUMN_MACV ="MACV";
     public static final  String COLUMN_TENCV ="TENCV";

@@ -19,7 +19,7 @@ import java.util.List;
 
 public class CT_CV_ReaderSqlite extends SQLiteOpenHelper {
 
-    public static final  String DATABASE_NAME ="QUANLY_TG";
+    public static final  String DATABASE_NAME ="QUANLY_TG.db";
     public static final  String TABLE_NAME ="CT_CV";
     public static final  String COLUMN_MACV ="MACV";
     public static final  String COLUMN_MANV ="MANV";
