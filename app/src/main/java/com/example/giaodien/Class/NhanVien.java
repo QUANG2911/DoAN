@@ -1,20 +1,19 @@
-package com.example.giaodien.Database.NHANVIEN;
+package com.example.giaodien.Class;
 
-public class NHAN_VIEN {
-    public String MANV;
-    public String HOTEN;
-    public String CHUCVU;
-    public String NGAYSING;
-    public String EMAIL;
-    public String SDT;
-    public String DC;
-    public String MATKHAU;
+public class NhanVien {
+    private int MANV;
+    private String HOTEN;
+    private String CHUCVU;
+    private String NGAYSINH;
+    private String EMAIL;
+    private String SDT;
+    private String DC;
 
-    public String getMANV() {
+    public int getMANV() {
         return MANV;
     }
 
-    public void setMANV(String MANV) {
+    public void setMANV(int MANV) {
         this.MANV = MANV;
     }
 
@@ -34,12 +33,12 @@ public class NHAN_VIEN {
         this.CHUCVU = CHUCVU;
     }
 
-    public String getNGAYSING() {
-        return NGAYSING;
+    public String getNGAYSINH() {
+        return NGAYSINH;
     }
 
-    public void setNGAYSING(String NGAYSING) {
-        this.NGAYSING = NGAYSING;
+    public void setNGAYSINH(String NGAYSINH) {
+        this.NGAYSINH = NGAYSINH;
     }
 
     public String getEMAIL() {
@@ -74,7 +73,18 @@ public class NHAN_VIEN {
         this.MATKHAU = MATKHAU;
     }
 
+    private String MATKHAU;
 
+    public NhanVien(int MANV, String HOTEN, String CHUCVU, String NGAYSINH, String EMAIL, String SDT, String DC, String MATKHAU) {
+        this.MANV = MANV;
+        this.HOTEN = HOTEN;
+        this.CHUCVU = CHUCVU;
+        this.NGAYSINH = NGAYSINH;
+        this.EMAIL = EMAIL;
+        this.SDT = SDT;
+        this.DC = DC;
+        this.MATKHAU = MATKHAU;
+    }
 
 
 }
