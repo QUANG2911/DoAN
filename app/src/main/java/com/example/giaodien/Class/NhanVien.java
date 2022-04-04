@@ -6,7 +6,6 @@ public class NhanVien {
     private String CHUCVU;
     private String NGAYSINH;
     private String EMAIL;
-    private String SDT;
     private String DC;
 
     public int getMANV() {
@@ -49,14 +48,6 @@ public class NhanVien {
         this.EMAIL = EMAIL;
     }
 
-    public String getSDT() {
-        return SDT;
-    }
-
-    public void setSDT(String SDT) {
-        this.SDT = SDT;
-    }
-
     public String getDC() {
         return DC;
     }
@@ -75,13 +66,12 @@ public class NhanVien {
 
     private String MATKHAU;
 
-    public NhanVien(int MANV, String HOTEN, String CHUCVU, String NGAYSINH, String EMAIL, String SDT, String DC, String MATKHAU) {
+    public NhanVien(int MANV, String HOTEN, String CHUCVU, String NGAYSINH, String EMAIL, String DC, String MATKHAU) {
         this.MANV = MANV;
         this.HOTEN = HOTEN;
         this.CHUCVU = CHUCVU;
         this.NGAYSINH = NGAYSINH;
         this.EMAIL = EMAIL;
-        this.SDT = SDT;
         this.DC = DC;
         this.MATKHAU = MATKHAU;
     }

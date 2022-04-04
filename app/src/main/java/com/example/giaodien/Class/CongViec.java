@@ -39,10 +39,16 @@ public class CongViec {
     private String ND_CV;
     private int TINHTRANG;
 
-    public CongViec(int MACV, String TENCV, String ND_CV, int TINHTRANG) {
+    public CongViec( int id, String TENCV, String ND_CV, int TINHTRANG) {
+        this.MACV = id;
         this.MACV = MACV;
         this.TENCV = TENCV;
         this.ND_CV = ND_CV;
         this.TINHTRANG = TINHTRANG;
+    }
+
+    public CongViec()
+    {
+
     }
 }
