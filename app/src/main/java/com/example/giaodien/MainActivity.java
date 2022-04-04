@@ -72,33 +72,4 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-
-//    public void AddJobClick(View view) {
-//        addFragment(new fragmentAdd());
-//    }
-//
-//    public void popTimePicker(View view) {
-//        TimePickerDialog.OnTimeSetListener onTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
-//            @Override
-//            public void onTimeSet(TimePicker timePicker, int gio, int phut) {
-//                hour = gio;
-//                minute = phut;
-//                timeBtn.setText(String.format(Locale.getDefault(), "%02d:%02d",hour,minute));
-//            }
-//        };
-//
-//        TimePickerDialog timePickerDialog = new TimePickerDialog(this,onTimeSetListener,hour, minute,true);
-//        timePickerDialog.show();
-//    }
-//
-//    public void AddSecondJob(View view) {
-//        EditText et_SecondJob = (EditText) findViewById(R.id.et_SecondJob);
-//
-//        listJob = (ListView) findViewById(R.id.List_GhiChu);
-//        context = this;
-//        listArray.add(et_SecondJob.getText().toString().trim());
-//        adapter = new ArrayAdapter(context, android.R.layout.simple_list_item_1,listArray);
-//
-//        listJob.setAdapter(adapter);
-//    }
 }

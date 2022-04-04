@@ -76,5 +76,8 @@ public class NhanVien {
         this.MATKHAU = MATKHAU;
     }
 
+    public NhanVien()
+    {
 
+    }
 }

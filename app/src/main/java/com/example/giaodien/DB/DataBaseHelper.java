@@ -38,7 +38,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String NV_ID = "MANV";
     public static final String NV_TEN = "HOTEN";
     public static final String NV_CHUCVU = "CHUCVU";
-    public static final String NV_DATE = "DATE";
+    public static final String NV_DATE = "NGAYSINH";
     public static final String NV_MAIL = "EMAIL";
     public static final String NV_DC = "DC";
     public static final String NV_MK = "MATKHAU";
@@ -48,7 +48,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String CV_ID = "MACV";
     public static final String CV_TEN = "TENCV";
     public static final String CV_ND = "ND_CV";
-    public static final String CV_STAUS = "TINHTRANG";
+    public static final String CV_STAUS = "STAUS";
 
     //    TABLE CTCV
     public static final String CT_CV_TABLE = "CT_CV";
@@ -65,7 +65,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String VN_ID = "MANV";
     public static final String VN_TEN = "TENNV";
     public static final String VN_CV_ID = "MACV";
-    public static final String VN_STAUS = "TINHTRANG";
+    public static final String VN_STAUS = "STAUS";
 
     public DataBaseHelper(Context context)
     {
@@ -164,7 +164,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         {
             if (cursor.getCount() > 0)
             {
-                while(cursor.moveToNext())
+                cursor.moveToNext();
+                while( !cursor.isAfterLast())
                 {
                     @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex(CV_ID));
                     @SuppressLint("Range") String ten = cursor.getString(cursor.getColumnIndex(CV_TEN));
@@ -177,7 +178,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     cv.setTENCV(ten);
                     cv.setTINHTRANG(tt);
                     congViecs.add(cv);
+                    cursor.moveToNext();
                 }
+                cursor.close();
             }
         }
         return congViecs;
@@ -192,12 +195,12 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         String Select = "Select * From " + NV_TABLE;
 
         Cursor cursor = sqLiteDatabase.rawQuery(Select,null);
-
         if(cursor != null)
         {
             if (cursor.getCount() > 0)
             {
-                while(cursor.moveToNext())
+                cursor.moveToNext();
+                while (!cursor.isAfterLast())
                 {
                     @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex(NV_ID));
                     @SuppressLint("Range") String ten = cursor.getString(cursor.getColumnIndex(NV_TEN));
@@ -207,18 +210,19 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     @SuppressLint("Range") String mail = cursor.getString(cursor.getColumnIndex(NV_MAIL));
                     @SuppressLint("Range") String pass = cursor.getString(cursor.getColumnIndex(NV_MK));
 
-                    Log.e("id", id +"");
-                    Log.e("ten", ten +"");
-                    Log.e("chucVu", chucVu +"");
-                    Log.e("date", date +"");
-                    Log.e("dc", dc +"");
-                    Log.e("mail", mail +"");
-                    Log.e("pass", pass +"");
-
-                    NhanVien nv = new NhanVien(id,ten,chucVu,date,dc,mail,pass);
+                    NhanVien nv = new NhanVien();
+                    nv.setMANV(id);
+                    nv.setMATKHAU(pass);
+                    nv.setNGAYSINH(date);
+                    nv.setHOTEN(ten);
+                    nv.setCHUCVU(chucVu);
+                    nv.setDC(dc);
+                    nv.setEMAIL(mail);
 
                     nhanViens.add(nv);
+                    cursor.moveToNext();
                 }
+                cursor.close();
             }
         }
         return nhanViens;
