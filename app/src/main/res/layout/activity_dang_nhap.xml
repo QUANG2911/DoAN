@@ -33,7 +33,7 @@
                 android:id="@+id/et_id"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Mã số nhân viên"
+                android:hint="Email"
                 android:background="@drawable/vien"
                 android:padding="10dp"
                 android:layout_marginBottom="20dp"
