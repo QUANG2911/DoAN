@@ -20,6 +20,7 @@
             android:name=".DangNhapActivity"
             android:exported="false">
             <--Huân đã ở đây-->
+            <--Huân đã ở đây-->
         </activity>
         <activity
             android:name=".MainActivity"
