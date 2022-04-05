@@ -74,7 +74,7 @@
         <FrameLayout
             android:id="@+id/Frame_Layout"
             android:layout_width="match_parent"
-            android:layout_height="652dp"></FrameLayout>
+            android:layout_height="652dp"/>
 
         <ImageButton
             android:id="@+id/addImg"

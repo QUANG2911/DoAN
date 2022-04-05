@@ -45,7 +45,14 @@ public class VIECNHO {
         this.MACV = MACV;
     }
 
+    public String toString()
+    {
+        return getTEN_NV();
+    }
 
+    public VIECNHO()
+    {
 
+    }
 
 }

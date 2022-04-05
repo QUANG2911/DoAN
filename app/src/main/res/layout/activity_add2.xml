@@ -118,7 +118,8 @@
             android:id="@+id/List_GhiChu"
             android:layout_width="356dp"
             android:layout_height="264dp"
-            android:layout_marginLeft="20dp"></ListView>
+            android:layout_marginLeft="20dp"
+            ></ListView>
 
         <Button
             android:id="@+id/Luu_btn"
@@ -127,6 +128,7 @@
             android:layout_gravity="right"
             android:layout_marginRight="30dp"
             android:backgroundTint="@color/teal_200"
+            android:onClick="AddJob"
             android:text="Lưu"
             android:textColor="@color/white"></Button>
     </LinearLayout>

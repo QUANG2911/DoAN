@@ -13,6 +13,7 @@ import android.util.Log;
 
 import com.example.giaodien.Class.CongViec;
 import com.example.giaodien.Class.NhanVien;
+import com.example.giaodien.Class.VIECNHO;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -230,17 +231,31 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public long insertCv(CongViec cv)
     {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(CV_ID, cv.getMACV());
         contentValues.put(CV_TEN, cv.getTENCV());
         contentValues.put(CV_ND, cv.getND_CV());
         contentValues.put(CV_STAUS, cv.getTINHTRANG());
 
-        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+
         long rowId = sqLiteDatabase.insert(CV_TABLE, null, contentValues);
 
         return rowId;
     }
 
+    public long insertVn(VIECNHO vn)
+    {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(VN_ID, vn.getMANV());
+        contentValues.put(VN_TEN, vn.getTEN_NV());
+        contentValues.put(VN_CV_ID, vn.getMACV());
+        contentValues.put(VN_STAUS, vn.getTINHTRANG());
 
+
+        long rowId = sqLiteDatabase.insert(VN_TABLE, null, contentValues);
+
+        return rowId;
+    }
 }
